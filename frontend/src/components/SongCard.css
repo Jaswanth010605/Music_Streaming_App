@@ -1,0 +1,81 @@
+.song-card {
+    background-color: var(--bg-card);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+  
+  .song-card:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 8px 24px rgba(29, 185, 84, 0.2);
+  }
+  
+  .song-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+  }
+  
+  .song-info {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .song-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .song-artist {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .song-album {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .song-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+  
+  .song-duration,
+  .song-popularity {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+  }
+  
+  .recommendation-reason {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgba(29, 185, 84, 0.1);
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: var(--accent-primary);
+    text-transform: capitalize;
+  }

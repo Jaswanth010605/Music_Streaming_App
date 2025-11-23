@@ -1,0 +1,132 @@
+.album-page {
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .album-selector-card {
+    margin-bottom: 2rem;
+  }
+  
+  .album-header-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+  }
+  
+  .album-icon {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+  }
+  
+  .album-details {
+    flex: 1;
+  }
+  
+  .album-details h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+  }
+  
+  .album-artist {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+  }
+  
+  .album-meta {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    color: var(--text-muted);
+  }
+  
+  .album-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .audio-features-section {
+    margin-bottom: 2rem;
+  }
+  
+  .audio-features-section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+  }
+  
+  .similar-albums-section {
+    margin-bottom: 2rem;
+  }
+  
+  .similar-albums-section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+  }
+  
+  .similar-album-card {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .similar-album-card svg {
+    color: var(--accent-primary);
+  }
+  
+  .similar-album-card h4 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+  }
+  
+  .tracks-section {
+    margin-top: 2rem;
+  }
+  
+  .tracks-section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+  }
+  
+  .track-with-number {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .track-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    min-width: 40px;
+    text-align: center;
+  }
+  
+  @media (max-width: 768px) {
+    .album-header-card {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .album-meta {
+      justify-content: center;
+    }
+    
+    .track-number {
+      font-size: 1.2rem;
+      min-width: 30px;
+    }
+  }

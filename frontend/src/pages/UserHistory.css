@@ -1,0 +1,174 @@
+.user-history-page {
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .page-header {
+    margin-bottom: 2rem;
+  }
+  
+  .page-header h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .page-description {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+  }
+  
+  .user-selector-card {
+    margin-bottom: 2rem;
+  }
+  
+  .selector-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+  }
+  
+  .user-select {
+    width: 100%;
+  }
+  
+  .stats-grid {
+    margin-bottom: 2rem;
+  }
+  
+  .stat-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .stat-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .stat-info h3 {
+    font-size: 1.75rem;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+  }
+  
+  .stat-info p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  .top-artists-section,
+  .recommendations-section,
+  .history-section {
+    margin-bottom: 3rem;
+  }
+  
+  .top-artists-section h2,
+  .recommendations-section h2,
+  .history-section h2 {
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+  }
+  
+  .section-description {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+  }
+  
+  .top-artists-grid {
+    margin-top: 1rem;
+  }
+  
+  .artist-card {
+    text-align: center;
+    position: relative;
+    padding: 2rem 1.5rem;
+  }
+  
+  .artist-rank {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--accent-primary);
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+  
+  .artist-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+  }
+  
+  .artist-card p {
+    color: var(--text-secondary);
+    margin: 0;
+  }
+  
+  .songs-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .error-message {
+    background-color: rgba(226, 33, 52, 0.1);
+    border: 1px solid var(--error);
+    color: var(--error);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .empty-icon {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+  }
+  
+  .empty-state h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .empty-state p {
+    color: var(--text-secondary);
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .stat-card {
+      flex-direction: column;
+      text-align: center;
+    }
+  }

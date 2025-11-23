@@ -1,0 +1,87 @@
+.discovery-page {
+    animation: fadeIn 0.5s ease;
+  }
+  
+  .filters-card {
+    margin-bottom: 2rem;
+  }
+  
+  .genre-selector label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+  }
+  
+  .sliders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .slider-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .slider-group label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+  
+  .slider-values {
+    color: var(--accent-primary);
+    font-size: 0.9rem;
+  }
+  
+  .slider-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .slider-inputs input[type="range"] {
+    width: 100%;
+  }
+  
+  .filter-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .results-section {
+    margin-top: 2rem;
+  }
+  
+  .results-section h2 {
+    margin-bottom: 1.5rem;
+    color: var(--text-primary);
+  }
+  
+  .songs-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .sliders-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    
+    .filter-actions {
+      flex-direction: column;
+    }
+    
+    .filter-actions button {
+      width: 100%;
+    }
+  }
